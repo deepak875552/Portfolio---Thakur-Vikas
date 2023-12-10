@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thakur Vikas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>WELCOME TO THAKUR CONSTRUCTION</h1>
+        <br>
+        <img src="vikasphoto.png" alt="">
+       <p>Hello, <span class="span">I'm <strong>Thakur Vikas Kumar</strong></span></p> 
+    </section>
+
+<section id="about">
+        <h2>About Me</h2>
+<P>I am a passionate and dedicated civil engineer with a strong background in designing and managing construction projects. My journey in the world of civil engineering began with a fascination for creating structures that not only stand the test of time but also contribute positively to our communities and environment.</P>
+<br>
+
+<h4>Education</h4>
+I hold a Bachelor's Degree in Civil Engineering from <strong>Galgotias University</strong>, Greater Noida, Uttar Pradesh. Where I gained a solid foundation in structural analysis, Quantity Surveying & Estimation. My academic journey fueled my desire to apply my knowledge to real-world projects.
+<br>
+<br>
+<h4>Professional Experience</h4>
+<p>With 3 years of experience in the field, I've had the privilege of working on a diverse range of projects</p>
+<br>
+<h4>Infrastructure Development</h4>
+<p>I've been involved in the design and construction of buildings and hospital.</p>
+<br>
+
+<h4>Building Design</h4>
+<p>I've contributed to the development of commercial and residential structures, focusing on efficient space utilization and environmentally friendly designs.</p>
+<br>
+
+<h4>Management</h4>
+<p>My project management skills enable me to oversee budgets, schedules, and teams effectively, ensuring the successful completion of projects.</p>
+<br>
+
+<h4>Continuous Learning</h4>
+
+<P>The field of civil engineering is ever-evolving, and I am committed to staying at the forefront of industry trends and technologies. I actively participate in professional development opportunities, workshops, and conferences to expand my knowledge and skills.</P>
+<br>
+
+<h4>Let's Collaborate</h4>
+
+<P>I'm always eager to take on new challenges and collaborate with like-minded professionals. If you have a project or an idea you'd like to discuss, please feel free to [contact me] through the provided contact details. Together, we can turn your vision into a reality.
+</P>
+    
+</section>
+
+<section id="services">
+    <h2>Services</h2>
+    <div class="service">
+        <img src="pexels-steffen-coonan-2098624.jpg" alt="Service 1">
+        <h3>Accessory Building Construction (Residental & Commericial)</h3>
+    </div>
+    
+    <div class="service">
+        <img src="Bathroom-Remodelling.jpg" alt="Service 3">
+        <h3>Bathroom Remodelling</h3>
+        
+    </div>
+    
+    <div class="service">
+        <img src="waterproofing.jpg" alt="Service 4">
+        <h3>Waterproofing</h3>
+        
+    </div>
+    
+    <div class="service">
+        <img src="2d.jpg" alt="Service 5">
+        <h3>House Floor Plans (2D & 3D)</h3>
+        
+    </div>
+    
+    <div class="service">
+        <img src="rebarring.webp" alt="Service 6">
+        <h3>Rebarring</h3>
+        
+    </div>
+    <div class="service">
+        <img src="estimation.webp" alt="Service 6">
+        <h3>Billing of any type of construction</h3>
+        
+    </div>
+    <div class="service">
+        <img src="quantity-surveying.jpg" alt="Service 6">
+        <h3>Quantity Surveying & Estimation</h3>
+        
+    </div>
+    <div class="service">
+        <img src="any.jpg" alt="Service 2">
+        <h3>Any type of Construction</h3>
+    
+    </div>
+</section>
+    
+    <section id="contact">
+        <h5>Contact Me</h5>
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                    <label for="name" >Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your e-mail" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" placeholder="Enter your message" name="message" required></textarea>
+                </div>
+                
+                <button type="submit" class="button">Submit</button>
+                
+                
+            </form>
+        </div>
+    </section>
+    
+
+
+    
+
+    <footer id="footer">
+        
+        <p>&copy; 2023 My Portfolio</p>
+        <P>Developed by Deepak Chauhan</P>
+    
+    
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll("nav a");
+
+    for (const link of links) {
+        link.addEventListener("click", smoothScroll);
+    }
+
+    function smoothScroll(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: "smooth", // This enables smooth scrolling
+                duration: 3000, // Adjust the duration (in milliseconds) to your desired speed
+            });
+        }
+    }
+});
+
+    </script>
+</body>
+</html>
